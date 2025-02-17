@@ -1,10 +1,10 @@
-<div class="max-w-sm bg-gray-800  border border-blue-900 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+<div class=" mt-8 mb-8 max-w-sm bg-gray-800  border border-blue-900 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
     <picture href="#">
         <img class=" h-60 rounded-t-lg w-full object-center object-contain" [src]="product().image" alt="" />
     </picture>
     <div class="p-5">
         <a href="#">
-            <h5 class="mb-2 text-1xl font-bold tracking-tight text-white-900 dark:text-white">{{product().title}}</h5>
+            <h5 class="mb-2 text-1xl font-bold tracking-tight text-white-900 dark:text-white">{{product().title[4]}}</h5>
         </a>
         <p class=" line-clamp-3 mb-3 font-normal text-white-700 dark:text-gray-400">{{product().description}}</p>
         <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

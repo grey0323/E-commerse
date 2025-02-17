@@ -11,4 +11,5 @@ export class ProductCardComponent {
 
   product = input.required<product>()
 
+
 }

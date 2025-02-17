@@ -8,8 +8,12 @@ import { product } from "../../interfaces/product";
 
 export class productServices extends BaseHttpServices{
 
-getProducts():Observable<product[]>{
-    return this._http.get<product[]>(`${this._apiurl}/products/`)
+getProducts(page:number):Observable<product[]>{
+    return this._http.get<product[]>(`${this._apiurl}/products/`,{
+        params:{
+            limit: page * 4
+        }
+    })
 }
 
 }
