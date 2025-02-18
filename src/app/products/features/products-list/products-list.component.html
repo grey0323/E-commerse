@@ -1,4 +1,4 @@
-@if (productsState.state.status()== 'loading') {
+@if (productsState.state.status() == 'loading') {
     <div class="mx-auto max-w-screen-xl">
         <p>loading...</p>
     </div>
@@ -8,20 +8,14 @@
 
     <div class="mx-auto max-w-screen-xl">
         <div class="flex justify-end">
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Next Page</button>
+            <button (click)="Nextpage()" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">View more products</button>
     
         </div>
         
         <div class="grid grid-cols-[repeat(4,300px)] gap-6 ">
             @for (item of productsState.state().products; track $index) {
-
-                    <app-product-card class="block"  [product]="item" />
-                    
+                    <app-product-card class="block"  [product]="item"  />
                 
-                
-                
-                
-            
             }
         
         </div>

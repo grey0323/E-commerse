@@ -16,4 +16,9 @@ getProducts(page:number):Observable<product[]>{
     })
 }
 
+getproductsById(id:string):Observable<product>{
+    return this._http.get<product>(`${this._apiurl}/products/${id}`)
+
+}
+
 }

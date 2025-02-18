@@ -11,7 +11,7 @@ import { inject, Injectable } from "@angular/core";
 export class BaseHttpServices{
 
 _http = inject(HttpClient)
-_apiurl = environment.Apiurl;
+_apiurl = "https://fakestoreapi.com";
 
 
 }
